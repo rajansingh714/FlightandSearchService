@@ -4,7 +4,7 @@
   "description": "// Role based Architecture\r   -src/\r     index.js//server\r     models/\r     controller/\r     middleware/\r     services/\r     utils/\r     config/\r     repository/",
   "main": "index.js",
   "scripts": {
-    "start": "npx nodeman src/index"
+    "start": "npx nodemon src/index"
   },
   "author": "",
   "license": "ISC",

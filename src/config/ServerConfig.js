@@ -1,7 +1,6 @@
-const dotenv= require('dotenv');
+const dotenv = require('dotenv').config();
+//dotenv.config();
 
-dotenv.config();
-
-module.exports={
-    PORT:process.env.PORT
+exports.cofigfuration = {
+    PORT : process.env.PORT
 }

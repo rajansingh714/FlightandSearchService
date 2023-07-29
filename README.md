@@ -46,8 +46,12 @@
 
 
 `````
-- Once you've added your db config as listed above, go to the src folder from your terminal and execute `npx sequlize db:create`
+- Once you've added your db config as listed above, go to the src folder from your terminal and execute `npx sequelize db:create`
 ```
+
+//Below command is use for create model and migration 
+`npx sequelize model:generate --name City --attributes name:String`
+`npx sequelize db:create`
 
 ## DB Design
 

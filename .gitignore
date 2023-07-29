@@ -1,3 +1,6 @@
 node_modules/
 .env
 src/config/config.json
+
+Below command is use for create model and migration 
+// npx sequelize model:generate --name City --attributes name:String

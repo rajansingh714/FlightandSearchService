@@ -20,6 +20,7 @@ class CityRepsository{
                     id:cityId
                 }
             });
+            return true;
         }
         catch(err){
             console.log("something went wrong in the repository layer");
@@ -33,7 +34,7 @@ class CityRepsository{
                 where:{
                     id:cityId
                 }
-            });
+            }); 
             return city;
         }
         catch(err){

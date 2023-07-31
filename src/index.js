@@ -16,7 +16,7 @@ const repo= new CityRepsository();
 repo.createCity({name:"Bihar"});
 
 
-app.listen(PORT, ()=>{
+app.listen(PORT, async()=>{
     console.log("server Started as ", PORT);
 })
 

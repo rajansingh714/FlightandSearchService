@@ -11,24 +11,24 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      this.hashMany(models.Airport,{
+      this.hasMany(models.Airport,{
         foreignKey: 'cityId'
       });
     }
   }
-  Airport.init({
+  City.init({
     name:
       { 
-      type:  DataTypes.STRING,
-       allowNull :false
+      type:DataTypes.STRING,
+       allowNull :false,
+       unique:true
       },
-      address: DataTypes.STRING,
-      cityId: DataTypes.INTEGER
+      
   },
    {
     sequelize,
-    modelName: 'Airport',
+    modelName: 'City',
   });
-  return Airport;
+  return City;
 };
 
